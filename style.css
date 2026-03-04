@@ -75,7 +75,7 @@ nav ul li a:hover {
 /* Project intro styling */
 .project-intro {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
     text-align: center;
     font-size: 16px;
     line-height: 1.8;
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 h2 {
     font-size: 48px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #333;
     font-family: 'Georgia', serif;
     font-weight: 400;
@@ -494,6 +494,26 @@ h3 {
 /* Styles spécifiques à la page Photoshop */
 .photoshop-page .project-content img {
     max-width: 50%;
+}
+
+/* Grille SolidWorks */
+.solidworks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.solidworks-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solidworks-project img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .project-text p {
