@@ -116,7 +116,7 @@ h3 {
 /* ===== PRESENTATION SECTION ===== */
 .presentation-flex {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 80px;
 }
 
@@ -125,8 +125,8 @@ h3 {
 }
 
 .image-wrapper img {
-    width: 320px;
-    height: 400px;
+    width: 250px;
+    height: 320px;
     object-fit: cover;
     box-shadow: none;
     border-radius: 0;
@@ -135,7 +135,7 @@ h3 {
 
 .text-wrapper {
     flex: 1;
-    padding-top: 20px;
+    padding-top: 0;
 }
 
 .text-wrapper p {
@@ -333,10 +333,10 @@ h3 {
     flex-shrink: 0;
     background: white;
     border-radius: 8px;
-    padding: 20px 16px;
+    padding: 25px 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 200px;
+    max-width: 200px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -354,7 +354,7 @@ h3 {
 
 .parcours-card h4 {
     margin: 0 0 10px 0;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: #333;
     word-break: break-word;
@@ -569,7 +569,7 @@ footer {
 }
 
 .footer-linkedin {
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
     font-weight: 500;
 }
 
@@ -577,6 +577,7 @@ footer {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
+    font-size: 16px;
 }
 
 .footer-linkedin a:hover {
