@@ -70,26 +70,13 @@
                     <a href="blender.html" class="portfolio-card-link">
                         <div class="portfolio-card-header">
                             <div class="portfolio-card-image">
-                                <img src="Image/Chambre.png" alt="Blender">
+                                <img src="Image/Chambre.png" alt="Modélisation 3D">
                             </div>
                             <div class="portfolio-card-desc">
-                                <p>Blender</p>
+                                <p>Modélisation 3D</p>
                             </div>
                         </div>
-                        <h3>Blender</h3>
-                    </a>
-                </div>
-                <div class="portfolio-card">
-                    <a href="solidworks.html" class="portfolio-card-link">
-                        <div class="portfolio-card-header">
-                            <div class="portfolio-card-image">
-                                <img src="Image/arbre support.png" alt="SolidWorks">
-                            </div>
-                            <div class="portfolio-card-desc">
-                                <p>SolidWorks</p>
-                            </div>
-                        </div>
-                        <h3>SolidWorks</h3>
+                        <h3>Modélisation 3D</h3>
                     </a>
                 </div>
             </div>
@@ -166,6 +153,41 @@
             <p>&copy; 2025 Martin Petit. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <script>
+        // ===== CONFIGURATION EMAIL =====
+        const YOUR_EMAIL_HERE = "petitmrtn33@gmail.com";
+        
+        // Initialiser EmailJS (avec Service ID public, pas besoin de clé privée)
+        emailjs.init({
+            publicKey: "J09dZbxPLkN3v5c8q"
+        });
+
+        // Gérer la soumission du formulaire
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nom = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const templateParams = {
+                to_email: YOUR_EMAIL_HERE,
+                from_name: nom,
+                from_email: email,
+                message: message
+            };
+
+            emailjs.send('service_7l0c9mh', 'template_7l0c9mh', templateParams)
+                .then(function(response) {
+                    alert('Message envoyé avec succès!');
+                    document.querySelector('.contact-form').reset();
+                }, function(error) {
+                    alert('Erreur lors de l\'envoi: ' + JSON.stringify(error));
+                });
+        });
+    </script>
 
 </body>
 </html>

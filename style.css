@@ -197,6 +197,7 @@ h3 {
     gap: 0;
     position: relative;
     flex: 1;
+    overflow: hidden;
 }
 
 .portfolio-card-image {
@@ -226,7 +227,7 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.5);
-    padding: 12px 70px;
+    padding: 12px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,6 +242,7 @@ h3 {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
+    white-space: nowrap;
 }
 
 .portfolio-card h3 {
@@ -736,4 +738,76 @@ footer p {
     .parcours-card p {
         font-size: 12px;
     }
+}
+
+/* ===== SOLIDWORKS CAROUSEL ===== */
+.solidworks-carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-content {
+    flex: 1;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e8a87c;
+}
+
+.carousel-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 0 15px 0;
+}
+
+.carousel-controls {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.carousel-btn {
+    padding: 10px 20px;
+    background-color: #e8a87c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #d99860;
 }
