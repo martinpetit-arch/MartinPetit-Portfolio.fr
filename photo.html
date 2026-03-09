@@ -6,7 +6,7 @@
     <title>Photo | Martin Petit Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="photo-page">
 
     <header>
         <div class="header-container">
@@ -62,6 +62,53 @@
         </div>
     </section>
 
+    <section class="section-white">
+        <div class="container">
+            <h2 class="title-center">Portfolio</h2>
+            <div class="portfolio-cards-grid">
+                <div class="portfolio-card">
+                    <a href="htmlcss.html" class="portfolio-card-link">
+                        <div class="portfolio-card-header">
+                            <div class="portfolio-card-image">
+                                <img src="Image/HTML Part1.png" alt="HTML/CSS">
+                            </div>
+                            <div class="portfolio-card-desc">
+                                <p>HTML/CSS</p>
+                            </div>
+                        </div>
+                        <h3>HTML/CSS</h3>
+                    </a>
+                </div>
+                <div class="portfolio-card">
+                    <a href="photoshop.html" class="portfolio-card-link">
+                        <div class="portfolio-card-header">
+                            <div class="portfolio-card-image">
+                                <img src="Image/Photoshop.png" alt="Photoshop">
+                            </div>
+                            <div class="portfolio-card-desc">
+                                <p>Photoshop</p>
+                            </div>
+                        </div>
+                        <h3>Photoshop</h3>
+                    </a>
+                </div>
+                <div class="portfolio-card">
+                    <a href="blender.html" class="portfolio-card-link">
+                        <div class="portfolio-card-header">
+                            <div class="portfolio-card-image">
+                                <img src="Image/Chambre.png" alt="Modélisation 3D">
+                            </div>
+                            <div class="portfolio-card-desc">
+                                <p>Modélisation 3D</p>
+                            </div>
+                        </div>
+                        <h3>Modélisation 3D</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         const itemsPerView = 3;
         let currentPosition = 0;
@@ -82,6 +129,21 @@
             track.style.transform = `translateX(${translateValue}%)`;
         }
     </script>
+
+    <footer>
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html#Presentation">Présentation</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#Parcours">Parcours</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <p class="footer-linkedin"><a href="https://www.linkedin.com/in/martin-petit-b996a3388/" target="_blank">Mon Linkedin</a></p>
+            </nav>
+            <p>&copy; 2025 Martin Petit. Tous droits réservés.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
