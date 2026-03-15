@@ -693,6 +693,14 @@ footer p {
 /* ===== RESPONSIVE ===== */
 /* Tablettes (1024px) */
 @media (max-width: 1024px) {
+    header {
+        padding: 12px 0;
+    }
+
+    .header-container {
+        padding: 0 15px;
+    }
+
     nav ul {
         gap: 40px;
     }
@@ -725,10 +733,26 @@ footer p {
     .solidworks-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-nav ul {
+        gap: 25px;
+    }
 }
 
 /* Petites tablettes/Grand mobile (768px) */
 @media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .header-container {
+        padding: 0 10px;
+    }
+
     .presentation-flex {
         flex-direction: column;
         gap: 30px;
@@ -835,6 +859,19 @@ footer p {
     .contact-form {
         padding: 25px;
     }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer-nav ul {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
 }
 
 /* Mobile (480px et moins) */
@@ -844,26 +881,18 @@ footer p {
     }
 
     .header-container {
-        flex-direction: column;
-        gap: 8px;
+        padding: 0 10px;
     }
 
     nav ul {
-        width: 100%;
-        flex-direction: column;
-        gap: 6px;
-        text-align: center;
+        gap: 10px;
         flex-wrap: nowrap;
-    }
-
-    nav ul li {
-        width: 100%;
+        justify-content: center;
     }
 
     nav ul li a {
-        font-size: 13px;
-        display: block;
-        padding: 5px 0;
+        font-size: 12px;
+        padding: 5px 8px;
     }
 
     .presentation-flex {
@@ -1005,10 +1034,15 @@ footer p {
 
     .footer-nav ul {
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     .footer-nav a {
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
 
