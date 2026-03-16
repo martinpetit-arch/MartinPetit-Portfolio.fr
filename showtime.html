@@ -6,7 +6,7 @@
     <title>Showtime | Martin Petit Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="showtime-page">
 
     <header>
         <div class="header-container">
@@ -33,8 +33,8 @@
 
     <section class="section-gray">
         <div class="container">
-            <div class="youtube-video-container" style="text-align: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/w-ukrRQDGgk?si=wmFuz8-sBDJLic02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="position: relative; width: 100%; max-width: 560px; margin: 0 auto; padding-bottom: 56.25%;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/w-ukrRQDGgk?si=wmFuz8-sBDJLic02" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -85,8 +85,8 @@
                 <div class="portfolio-card">
                     <a href="photo.html" class="portfolio-card-link">
                         <div class="portfolio-card-header">
-                            <div class="portfolio-card-image" style="display: flex; align-items: center; justify-content: center;">
-                                <img src="Image/logo.svg" alt="Showtime" style="max-width: 200px; height: auto;">
+                            <div class="portfolio-card-image">
+                                <img src="Image/Projet%20photo/Street1.jpg" alt="Photo">
                             </div>
                             <div class="portfolio-card-desc">
                                 <p>Photo</p>
@@ -98,6 +98,21 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html#Presentation">Présentation</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#Parcours">Parcours</a></li>
+                    <li><a href="index.html#Contact">Contact</a></li>
+                </ul>
+                <p class="footer-linkedin"><a href="https://www.linkedin.com/in/martin-petit-b996a3388/" target="_blank">Mon Linkedin</a></p>
+            </nav>
+            <p>&copy; 2025 Martin Petit. Tous droits réservés.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
